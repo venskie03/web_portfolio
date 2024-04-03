@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kevin kyle Ganados Portfolio</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+    </head>
+    <body class="bg-gray-900 text-color-white">
+        <header class="sticky top-0 z-50">
+            <nav class="container flex justify-between items-center">
+                <div class="py-5 text-white flex text-2xl">
+                    <a class="text-[#3bd6c6] mt-1" href="#home">
+                        <ion-icon name="layers"></ion-icon>
+                    </a>
+                    <a class="pl-2" href="#home">
+                       Portfolio
+                    </a>
+                </div>
+                <div>
+                    <ul class="hidden lg:flex items-center space-x-6">
+                        <li>
+                            <a href="#home" class="hover:text-[#3bd6c6] ease-in duration-200">Home</a>
+                        </li>
+                        <li>
+                            <a href="#features" class="hover:text-[#3bd6c6] ease-in duration-200">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#testimonial" class="hover:text-[#3bd6c6] ease-in duration-200">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#project" class="hover:text-[#3bd6c6] ease-in duration-200">Project</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="hover:text-[#3bd6c6] ease-in duration-200">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mobile screen  -->
+                <div id="hamburger" class="lg:hidden cursor-pointer z-50 text-2xl mt-1 text-[#3bd6c6]">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                    <ul class="h-full grid place-items-center py-20">
+                        <li>
+                            <a id="hLink" href="#home" class="hover:text-[#3bd6c6] ease-in duration-200">Home</a>
+                        </li>
+                        <li>
+                            <a id="hLink" href="#features" class="hover:text-[#3bd6c6] ease-in duration-200">Skills</a>
+                        </li>
+                        <li>
+                            <a id="hLink" href="#testimonial" class="hover:text-[#3bd6c6] ease-in duration-200">Testimonial</a>
+                        </li>
+                        <li>
+                            <a id="hLink" href="#contact" class="hover:text-[#3bd6c6] ease-in duration-200">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="relative md:h-screen md:py-32">
+                <div class="blob1"></div>
+                <div class="blob2"></div>
+                <div class="container md:py-20">
+                    <div class="flex flex-wrap z-20 p-5 md:p-0 justify-evenly md:justify-center lg:space-x-20 md:space-x-10 ">
+                        <div class="relative md:mb-36 mb-10">
+                            <img class="rounded-full md:h-[340px] h-[290px] md:w-72 w-64 bg-gradient-to-r from-cyan-500 to-[#22a396] bg-opacity-10 shadow-lg shadow-[#3bd6c6]" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/photo_2023-12-18_14-52-45-removebg-preview.png?alt=media&token=2b2453ee-6dd5-4207-929a-a1c25113a4db" alt="">
+                        </div>
+                        <div class="text-center mb-12 md:text-left md:w-1/2 lg:py-[60px] ">
+                            <div class="flex flex-wrap lg:justify-start md:text-start  justify-center space-x-2 text-wrap md:text-4xl text-3xl font-semibold mb-2">
+                                <h1 class="">Hi, I am</h1>
+                                <h1 class="text-[#3bd6c6]">Kevin kyle Ganados</h1>
+                            </div>
+                            <p class="mb-3 text-justify text-lg">
+                               
+                                As a full stack developer, I excel in crafting user-friendly and visually captivating websites. My focus lies in comprehensively understanding my clients' requirements and delivering solutions that surpass their expectations. Let's collaborate to transform your concepts into reality!
+                            </p>
+                            <div className="icons text-5xl flex gap-2 justify-center md:justify-start">
+                                <a class="text-3xl" href="">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a>
+                                <a class="text-3xl" href="">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                                <a class="text-3xl" href="">
+                                    <ion-icon name="logo-slack"></ion-icon>
+                                </a>
+                                <a class="text-3xl" target="_blank" href="facebook.com">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </div>
+                           <a href="#contact">
+                            <button id="btn-an" class="hover:-translate-y-1 ease-in duration-300 mt-3 border p-2 w-32 rounded-sm" >
+                                Email me!
+                            </button>
+                           </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="features" class="bg-color-primary-light mb-24">
+                <div class="container py-20">
+                    <div class="text-center m-auto mb-20 md:w-1/2">
+                        <h4 class="font-bold text-[#3bd6c6] mb-4">My Skills</h4>
+                        <h1 class="title">Expertise in Development</h1>
+                    </div>
+                    <div class="expertise flex flex-wrap justify-center items-center gap-6 mx-auto mt-14 mb-14">
+                        <div class="rounded-lg border text-center border-gray-500 p-3 cursor-pointer ease-in duration-300 hover:-translate-y-4 hover:shadow-lg hover:shadow-[#3bd6c6]">
+                            <div class="w-20">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/ruby.png?alt=media&token=000a45b6-8f56-4764-bb93-d9a3db9f4376" alt="">
+                                <span class="mt-3">Ruby</span>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border text-center border-gray-500 p-3 cursor-pointer ease-in duration-300 hover:-translate-y-4 hover:shadow-lg hover:shadow-[#3bd6c6]">
+                            <div class="w-20">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/physics.png?alt=media&token=144615df-b587-4494-939c-e2cce70d89a2" alt="">
+                                <span class="mt-3">React</span>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border text-center border-gray-500 p-3 cursor-pointer ease-in duration-300 hover:-translate-y-4 hover:shadow-lg hover:shadow-[#3bd6c6]">
+                            <div class="w-20">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/js.png?alt=media&token=343f7c4f-f7b5-4b35-862e-bf551568dba0" alt="">
+                                <span class="mt-3">Javascript</span>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border text-center border-gray-500 p-3 cursor-pointerease-in duration-300 hover:-translate-y-4 hover:shadow-lg hover:shadow-[#3bd6c6]">
+                            <div class="w-20">
+                                <img class="h-20 ml-2" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/html-logo.png?alt=media&token=81bca904-0543-4977-9dd5-e19bf71e152d" alt="">
+                                <span class="mt-3">HTML</span>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border text-center border-gray-500 p-3 cursor-pointer ease-in duration-300 hover:-translate-y-4 hover:shadow-lg hover:shadow-[#3bd6c6]">
+                            <div class="w-20">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/css-3.png?alt=media&token=79b60cb2-27b5-4346-99af-16654185efcc" alt="">
+                                <span class="mt-3">Css</span>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border text-center border-gray-500 p-3 cursor-pointer ease-in duration-300 hover:-translate-y-4 hover:shadow-lg hover:shadow-[#3bd6c6]">
+                            <div class="w-20">
+                                <img class="h-20" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="">
+                                <span class="mt-3">TailwindCss</span>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border text-center border-gray-500 p-3 cursor-pointer ease-in duration-300 hover:-translate-y-4 hover:shadow-lg hover:shadow-[#3bd6c6]">
+                            <div class="w-20">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/fb-removebg-preview.png?alt=media&token=581851fd-be1e-4b47-84b4-9b8b88598bb2" alt="">
+                                <span class="mt-3">Firebase</span>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border text-center border-gray-500 p-3 cursor-pointer ease-in duration-300 hover:-translate-y-4 hover:shadow-lg hover:shadow-[#3bd6c6]">
+                            <div class="w-20">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/png-transparent-postgresql-relational-database-management-system-object-relational-database-elephants-miscellaneous-animals-logo-removebg-preview.png?alt=media&token=77f511c0-2914-4937-8185-3819130daf3e" alt="">
+                                <span class="mt-3">Postgresql</span>
+                            </div>
+                        </div>
+
+                        <div class="rounded-lg border text-center border-gray-500 p-3 cursor-pointer ease-in duration-300 hover:-translate-y-4 hover:shadow-lg hover:shadow-[#3bd6c6]">
+                            <div class="w-20">
+                                <img src="https://t4.ftcdn.net/jpg/04/81/08/39/360_F_481083992_7HW2028J1J0JyoTvlKwid9S1sBLMnmpT.jpg" alt="">
+                                <span class="mt-3">Rest API</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+                        <!-- card no 1 -->
+                        <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                            <div class="bg-gray-900 border inline-block rounded-2xl py-3 px-4">
+                                <ion-icon class="text-2xl" name="bar-chart-outline"></ion-icon>
+                            </div>
+                            <h3 class="text-xl font-bold py-4">Full Stack Development Expertise</h3>
+                            <p class="leading-relaxed">Crafting Seamless Web Experiences across all Layers with Ruby on Rails</p>
+                        </div>
+                        <!-- card no 2 -->
+                        <div class="bg-color-primary-dark border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer">
+                            <div class="bg-gray-900 border inline-block rounded-2xl py-3 px-4">
+                                <ion-icon class="text-2xl" name="bar-chart-outline"></ion-icon>
+                            </div>
+                            <h3 class="text-xl font-bold py-4">Responsive Design</h3>
+                            <p class="leading-relaxed">
+                                Specialized in crafting responsive web designs that seamlessly adapt to various screen sizes and devices for an exceptional user experience.
+                            </p>
+                        </div>
+                        <!-- card no 3 -->
+                        <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                            <div class="bg-gray-900 border inline-block rounded-2xl py-3 px-4">
+                                <ion-icon class="text-2xl" name="bar-chart-outline"></ion-icon>
+                            </div>
+                            <h3 class="text-xl font-bold py-4">Frontend Frameworks</h3>
+                            <p class="leading-relaxed">
+                                Proficient in using frontend frameworks like React to build dynamic
+                            and interactive web applications.
+                            </p>
+                        </div>
+
+                        <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+                            <div class="bg-gray-900 border inline-block rounded-2xl py-3 px-4">
+                                <ion-icon class="text-2xl" name="bar-chart-outline"></ion-icon>
+                            </div>
+                            <h3 class="text-xl font-bold py-4">Backend Frameworks</h3>
+                            <p class="leading-relaxed">
+                                Proficient in utilizing Ruby on Rails framework to build robust and scalable backend solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="saving-money">
+        <div class="container py-20 relative">
+            <div class="blob1"></div>
+            <div class="blob2"></div>
+            <div class="flex flex-col items-center justify-between md:flex-row">
+                <div class="mb-12 md:w-1/2">
+                    <img src="./img/web.png" alt="">
+                </div>
+                <div class="text-center md:text-left md:w-1/2 md:ml-20">
+                    <h4 class="font-bold text-[#3bd6c6] mb-4">Software Engineering Services</h4>
+                    <h1 class="title mb-4">Crafting Innovative Software Solutions</h1>
+                    <p class="leading-relaxed mb-10">
+                        In every software engineering endeavor I undertake, I meticulously analyze requirements, architect system designs,
+                        develop efficient code using various programming languages and tools, conduct rigorous testing to ensure reliability,
+                        collaborate with team members for seamless integration, continuously refactor code for optimization,
+                        and comprehensively document processes for future reference and scalability.
+                    </p>
+                    <button class="border p-3 rounded-md bg-gray-800">Explore Services</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="bg-color-primary-light">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h4 class="font-bold text-[#3bd6c6] mb-4">How I Work</h4>
+                <h1 class="title">My Development Process</h1>
+            </div>
+            <div class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+                <!-- card 1  -->
+                <div class="text-center cursor-pointer">
+                    <div class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200">
+                        <p class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/img/line.png')] lg:after:absolute lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52">
+                            1
+                        </p>
+                    </div>
+                    <h3 class="text-xl font-bold py-4">Understanding Your Needs</h3>
+                    <p class="leading-relaxed">
+                        I initiate by comprehensively grasping your project's requirements and objectives to tailor a precise software solution.
+                    </p>
+                </div>
+                <!-- card 2  -->
+                <div class="text-center cursor-pointer">
+                    <div class="relative inline-block px-6 py-3 rounded-lg cursor-pointer ">
+                        <p class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/img/line-bottom.png')] lg:after:absolute lg:after:top-10 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52">
+                            2
+                        </p>
+                    </div>
+                    <h3 class="text-xl font-bold py-4">Design & Development</h3>
+                    <p class="leading-relaxed">
+                        I meticulously craft the design and execute the development of the software utilizing cutting-edge technologies and industry best practices.
+                    </p>
+                </div>
+                <!-- card 3  -->
+                <div class="text-center cursor-pointer">
+                    <div class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200">
+                        <p class="text-6xl">3</p>
+                    </div>
+                    <h3 class="text-xl font-bold py-4">Testing & Deployment</h3>
+                    <p class="leading-relaxed">
+                        I rigorously test the software's functionality and performance prior to deployment, ensuring a seamless user experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+
+    <section id="testimonial">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h4 class="font-bold text-[#3bd6c6] mb-4">Client Testimonials</h4>
+                <h1 class="title">What My Clients Say</h1>
+            </div>
+            <!-- review container  -->
+            <div class="mt-8">
+                <div class="flex items-center justify-center flex-wrap">
+                    <img
+                        src="./img/c1.jpg"
+                        alt=""
+                        class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic"
+                        onclick="showReview()"
+                    >
+                    <img
+                        src="./img/c2.jpg"
+                        alt=""
+                        class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                        onclick="showReview()"
+                    >
+                    <img
+                        src="./img/c3.jpg"
+                        alt=""
+                        class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                        onclick="showReview()"
+                    >
+                    <img
+                        src="./img/c4.jpg"
+                        alt=""
+                        class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                        onclick="showReview()"
+                    >
+                    <img
+                        src="./img/c5.jpg"
+                        alt=""
+                        class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                        onclick="showReview()"
+                    >
+                </div>
+                <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
+                    <div class="user-text active-text">
+                        <p class="md:text-2xl mb-6">
+                            "I am extremely satisfied with the web development services
+                                provided by this person. He delivered a high-quality website that perfectly met our
+                                requirements."
+                        </p>
+                        <h4 class="font-bold text-[#3bd6c6] mb-1">Mark</h4>
+                        <p>Client 1</p>
+                    </div>
+                    <div class="user-text">
+                        <p class="md:text-2xl mb-6">
+                            "His expertise in web development is commendable. He have a deep
+                                understanding of modern web technologies and delivered an outstanding website for our
+                                business."
+                        </p>
+                        <h4 class="font-bold text-[#3bd6c6] mb-1">Angela</h4>
+                        <p>Client 2</p>
+                    </div>
+                    <div class="user-text">
+                        <p class="md:text-2xl mb-6">
+                            "His attention to detail and commitment to delivering a
+                                top-notch web solution is impressive. I highly recommend their web development
+                                services."
+                        </p>
+                        <h4 class="font-bold text-[#3bd6c6] mb-1">Jazha</h4>
+                        <p>Client 3</p>
+                    </div>
+                    <div class="user-text">
+                        <p class="md:text-2xl mb-6">
+                            "Working with this person was a great experience. He is a
+                                skilled web developer who is dedicated to delivering excellence."
+                        </p>
+                        <h4 class="font-bold text-[#3bd6c6] mb-1">Froilan</h4>
+                        <p>Client 4</p>
+                    </div>
+                    <div class="user-text">
+                        <p class="md:text-2xl mb-6">
+                            "His web development expertise is unmatched. He transformed our
+                                vision into a stunning website that exceeded our expectations."
+                        </p>
+                        <h4 class="font-bold text-[#3bd6c6] mb-1">Brigiette</h4>
+                        <p>Client 5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="bg-color-primary-light py-10">
+        <h1 class="text-center text-3xl mb-8 mt-5 ">Recent Projects</h1>
+      <div class="flex flex-wrap justify-center gap-4 p-3">
+
+        <div class="p1 max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl bg-gray-800 rounded-lg overflow-hidden ease-in duration-300 hover:-translate-y-4 shadow-lg shadow-gray-700">
+          <div class="bg-gray-800 p-2 ml-2 flex justify-between ">
+          <h2 class="text-white text-lg font-semibold mb-2">Banking App</h2>
+         
+          <div class="text-[#3bd6c6]">
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wew">
+                <ion-icon name="radio-outline"></ion-icon>
+            </a>
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wwew">
+                <ion-icon name="folder-open-outline"></ion-icon>
+            </a>
+          </div>
+        
+      
+          </div>
+          <img class="w-full h-auto" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/p1.PNG?alt=media&token=3abd7010-0153-48b8-bf69-1746ef5faddf" alt="" />
+          <div class="p-4">
+            <p class="text-white md:text-start text-justify">  The Banking App is a web application built using HTML, CSS, JavaScript, and Tailwind CSS, designed to provide users with basic banking functionalities.</p>
+            <div class="mt-4 flex justify-center md:justify-start   ">
+
+                <img class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/html-logo.png?alt=media&token=81bca904-0543-4977-9dd5-e19bf71e152d" alt="">
+                <img class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/css-3.png?alt=media&token=79b60cb2-27b5-4346-99af-16654185efcc" alt="">
+                <img class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="">
+                <img class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/js.png?alt=media&token=343f7c4f-f7b5-4b35-862e-bf551568dba0" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="p1 max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl bg-gray-800 rounded-lg overflow-hidden ease-in duration-300 hover:-translate-y-4 shadow-lg shadow-gray-700">
+          <div class="bg-gray-800 p-2 ml-2 flex justify-between ">
+          <h2 class="text-white text-lg font-semibold mb-2"> Movies Web App</h2>
+         <div class="flex text-[#3bd6c6]">
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wew">
+                <ion-icon name="radio-outline"></ion-icon>
+            </a>
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wwew">
+                <ion-icon name="folder-open-outline"></ion-icon>
+            </a>
+         </div>
+          </div>
+          <img class="w-full h-auto" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/p2.PNG?alt=media&token=333cb2f1-cc09-4f42-8e50-d9076959fbea" alt="" />
+          <div class="p-4">
+            <p class="text-white  md:text-start text-justify">
+            Moviesfree is a dynamic movie platform crafted with Ruby on Rails serving as the backend and React powering the frontend, designed to provide users with an immersive movie-watching experience. 
+            </p>
+            <div class="mt-4 flex justify-center md:justify-start">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/physics.png?alt=media&token=144615df-b587-4494-939c-e2cce70d89a2" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/html-logo.png?alt=media&token=81bca904-0543-4977-9dd5-e19bf71e152d" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/css-3.png?alt=media&token=79b60cb2-27b5-4346-99af-16654185efcc" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://t4.ftcdn.net/jpg/04/81/08/39/360_F_481083992_7HW2028J1J0JyoTvlKwid9S1sBLMnmpT.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="p1 max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl bg-gray-800 rounded-lg overflow-hidden ease-in duration-300 hover:-translate-y-4 shadow-lg shadow-gray-700">
+          <div class="bg-gray-800 p-2 ml-2 flex justify-between ">
+          <h2 class="text-white text-lg font-semibold mb-2"> Movie API Wrapper App</h2>
+          <div class="flex text-[#3bd6c6]">
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wew">
+                <ion-icon name="radio-outline"></ion-icon>
+            </a>
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wwew">
+                <ion-icon name="folder-open-outline"></ion-icon>
+            </a>
+         </div>
+          </div>
+          <img class="w-full h-auto" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/p3.PNG?alt=media&token=520aff8b-77db-4337-aa9f-a5e4a2ed7cfd" alt="" />
+          <div class="p-4">
+            <p class="text-white  md:text-start text-justify">
+            The Movie APi Wrapper App is a Ruby on Rails application designed to provide users with a comprehensive api platform for managing and exploring movie information, including trailers and full movies.
+              </p>
+              <div class="mt-4 flex justify-center md:justify-start">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/ruby.png?alt=media&token=000a45b6-8f56-4764-bb93-d9a3db9f4376" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/png-transparent-postgresql-relational-database-management-system-object-relational-database-elephants-miscellaneous-animals-logo-removebg-preview.png?alt=media&token=77f511c0-2914-4937-8185-3819130daf3e" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://t4.ftcdn.net/jpg/04/81/08/39/360_F_481083992_7HW2028J1J0JyoTvlKwid9S1sBLMnmpT.jpg" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/html-logo.png?alt=media&token=81bca904-0543-4977-9dd5-e19bf71e152d" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/css-3.png?alt=media&token=79b60cb2-27b5-4346-99af-16654185efcc" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="p1 max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl bg-gray-800 rounded-lg overflow-hidden ease-in duration-300 hover:-translate-y-4 shadow-lg shadow-gray-700">
+          <div class="bg-gray-800 p-2 ml-2 flex justify-between ">
+          <h2 class="text-white text-lg font-semibold mb-2">Journal App</h2>
+          <div class="flex text-[#3bd6c6]">
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wew">
+                <ion-icon name="radio-outline"></ion-icon>
+            </a>
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wwew">
+                <ion-icon name="folder-open-outline"></ion-icon>
+            </a>
+         </div>
+          </div>
+          <img class="w-full h-auto" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/p4.PNG?alt=media&token=386a530e-2b15-4608-a78e-48b9c1d38974" alt="" />
+          <div class="p-4">
+            <p class="text-white  md:text-start text-justify">
+            The Journal App is a Ruby on Rails application designed to streamline task management and provide users with an organized platform for tracking their to-do lists. 
+            </p>
+            <div class="mt-4 flex justify-center md:justify-start">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/ruby.png?alt=media&token=000a45b6-8f56-4764-bb93-d9a3db9f4376" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/png-transparent-postgresql-relational-database-management-system-object-relational-database-elephants-miscellaneous-animals-logo-removebg-preview.png?alt=media&token=77f511c0-2914-4937-8185-3819130daf3e" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/html-logo.png?alt=media&token=81bca904-0543-4977-9dd5-e19bf71e152d" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/css-3.png?alt=media&token=79b60cb2-27b5-4346-99af-16654185efcc" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <div class="p1 max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl bg-gray-800 rounded-lg overflow-hidden ease-in duration-300 hover:-translate-y-4 shadow-lg shadow-gray-700">
+          <div class="bg-gray-800 p-2 ml-2 flex justify-between ">
+          <h2 class="text-white text-lg font-semibold mb-2">Online Food Inventory Management App</h2>
+          <div class="flex text-[#3bd6c6]">
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wew">
+                <ion-icon name="radio-outline"></ion-icon>
+            </a>
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wwew">
+                <ion-icon name="folder-open-outline"></ion-icon>
+            </a>
+         </div>
+          </div>
+          <img class="w-full h-auto" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/p5.PNG?alt=media&token=659305db-d655-4b4c-accc-91715c864876" alt="" />
+          <div class="p-4">
+            <p class="text-white  md:text-start text-justify">The Online Food Inventory Management App is a comprehensive web application built to streamline inventory management for restaurants and food businesses...</p>
+            <div class="mt-4 flex justify-center md:justify-start ">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/ruby.png?alt=media&token=000a45b6-8f56-4764-bb93-d9a3db9f4376" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/png-transparent-postgresql-relational-database-management-system-object-relational-database-elephants-miscellaneous-animals-logo-removebg-preview.png?alt=media&token=77f511c0-2914-4937-8185-3819130daf3e" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://t4.ftcdn.net/jpg/04/81/08/39/360_F_481083992_7HW2028J1J0JyoTvlKwid9S1sBLMnmpT.jpg" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/html-logo.png?alt=media&token=81bca904-0543-4977-9dd5-e19bf71e152d" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/css-3.png?alt=media&token=79b60cb2-27b5-4346-99af-16654185efcc" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="p1 max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl bg-gray-800 rounded-lg overflow-hidden ease-in duration-300 hover:-translate-y-4 shadow-lg shadow-gray-700">
+          <div class="bg-gray-800 p-2 ml-2 flex justify-between ">
+          <h2 class="text-white text-lg font-semibold mb-2">Kyles Slack Clone App</h2>
+           <div class="flex text-[#3bd6c6]">
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wew">
+                <ion-icon name="radio-outline"></ion-icon>
+            </a>
+            <a class=" text-2xl mt-1 mr-2 cursor-pointer "  target="_blank" href="wwew">
+                <ion-icon name="folder-open-outline"></ion-icon>
+            </a>
+         </div>
+          </div>
+          <img class="w-full h-auto" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/p6.PNG?alt=media&token=dbe3362f-1cab-4c71-af74-ba938fb04163" alt="" />
+          <div class="p-4">
+            <p class="text-white md:text-start text-justify ">The Online Food Inventory Management App is a comprehensive web application built to streamline inventory management for restaurants and food businesses...</p>
+            <div class="mt-4 flex justify-center md:justify-start">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/physics.png?alt=media&token=144615df-b587-4494-939c-e2cce70d89a2" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/html-logo.png?alt=media&token=81bca904-0543-4977-9dd5-e19bf71e152d" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/css-3.png?alt=media&token=79b60cb2-27b5-4346-99af-16654185efcc" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" alt="">
+                <img  class="ml-2 border border-[#3bd6c6] p-2 rounded-md w-10" src="https://firebasestorage.googleapis.com/v0/b/cloneslackapp-7e56d.appspot.com/o/fb-removebg-preview.png?alt=media&token=581851fd-be1e-4b47-84b4-9b8b88598bb2" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="p-4 md:p-0">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h4 class="font-bold text-[#3bd6c6] mb-4">Send Me Mail Now!</h4>
+                <h1 class="title">Get In Touch</h1>
+            </div>
+            <form>
+                <div class="w-full m-auto text-center md:w-2/3">
+                    <div class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2">
+                        <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" id="name" placeholder="Name">
+                        <input type="email" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" id="email" placeholder="Email">
+                        <input type="tel" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" id="pnumber" placeholder="Phone">
+                        <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" id="cname" placeholder="Company">
+                    </div>
+                    <textarea rows="4" class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" id="msg" placeholder="Message"></textarea>
+                    <button id="btn-an" class="hover:-translate-y-1 ease-in duration-300 mt-3 border p-2 w-32 rounded-sm" onclick="sendEmail(event)">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+<script>
+        function gotoupwork() {
+            window.location.href = 'https://www.upwork.com/freelancers/~01528b2b871299a364';
+        }
+
+        const navbar = document.querySelector('header');
+
+        const sectionn = document.querySelectorAll('section');
+        const navlinkss = document.querySelectorAll('nav ul li a');
+
+        window.onscroll = () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-color-primary-dark');
+                navbar.classList.add('border-b');
+                navbar.classList.add('border-color-gray');
+            } else {
+                navbar.classList.remove('bg-color-primary-dark');
+                navbar.classList.remove('border-b');
+                navbar.classList.remove('border-color-gray');
+            }
+
+            // active link
+            let current = 'home';
+
+            sectionn.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            })
+            navlinkss.forEach((item) => {
+                item.classList.remove('text-[#3bd6c6]');
+                if (item.href.includes(current)) {
+                    item.classList.add("text-[#3bd6c6]");
+                }
+            });
+        }
+
+        // Mobile menu
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hLink = document.querySelectorAll('#hLink');
+        const faSolid = document.querySelector(".fa-solid");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+
+        hLink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+            })
+        })
+
+        // testimonial
+        const userTexts = document.getElementsByClassName('user-text');
+        const userPics = document.getElementsByClassName('user-pic');
+
+        function showReview() {
+            for (userPic of userPics) {
+                userPic.classList.remove("active-pic");
+            }
+            for (userText of userTexts) {
+                userText.classList.remove("active-text");
+            }
+
+            let i = Array.from(userPics).indexOf(event.target);
+
+            userPics[i].classList.add('active-pic');
+            userTexts[i].classList.add('active-text');
+        }
+
+        const toggleBtn = document.getElementById('toggleBtn');
+
+        const card_1_front = document.querySelector("#card_1_front");
+        const card_1_back = document.querySelector("#card_1_back");
+
+        const card_2_front = document.querySelector("#card_2_front");
+        const card_2_back = document.querySelector("#card_2_back");
+
+        const card_3_front = document.querySelector("#card_3_front");
+        const card_3_back = document.querySelector("#card_3_back");
+
+        toggleBtn.addEventListener('change', () => {
+            card_1_front.classList.toggle('-rotate-y-180');
+            card_1_back.classList.toggle('rotate-y-180');
+
+            card_2_front.classList.toggle('-rotate-y-180');
+            card_2_back.classList.toggle('rotate-y-180');
+
+            card_3_front.classList.toggle('-rotate-y-180');
+            card_3_back.classList.toggle('rotate-y-180');
+
+        })
+</script>
+</body>
+</html>
