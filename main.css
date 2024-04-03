@@ -79,11 +79,13 @@ body {
   
 }
 
-
+#dp{
+  -webkit-text-stroke: 10px white;
+}
 
 
 #home{
-  background: linear-gradient(45deg, #b71540, #1f4197, #0d8e9a, #38ada9);
+  background: linear-gradient(45deg, #b71540, #1f4197, #0d8e9a, #133f3e);
   animation: BGcolor 12s ease-in-out infinite;
   background-size: 300% 300%;
 }
