@@ -28,6 +28,11 @@ function sendEmail(event) {
         message => {
             alert("Email Sent Successfully");
             console.log(message);
+            name.value = ""
+            email.value = ""
+            pnumber.value = ""
+            cname.value = ""
+            msg.value = ""
         }
     );
 }
