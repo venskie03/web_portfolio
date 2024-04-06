@@ -61,6 +61,63 @@ body {
   /* 2 */
 }
 
+
+#dev path:nth-child(1) {
+  stroke-dasharray: 471;
+  stroke-dashoffset: 471;
+  animation: stroke-an 2s ease forwards;
+}
+
+#dev path:nth-child(2) {
+  stroke-dasharray: 487;
+  stroke-dashoffset: 487;
+  animation: stroke-an 2s ease forwards 0.3s;
+}
+#dev path:nth-child(3) {
+  stroke-dasharray: 426;
+  stroke-dashoffset: 426;
+  animation: stroke-an 2s ease forwards 0.6s;
+}
+#dev path:nth-child(4) {
+  stroke-dasharray: 487;
+  stroke-dashoffset: 487;
+  animation: stroke-an 2s ease forwards 0.9s;
+}
+#dev path:nth-child(5) {
+  stroke-dasharray: 316;
+  stroke-dashoffset: 316;
+  animation: stroke-an 2s ease forwards 1.2s;
+}
+#dev path:nth-child(6) {
+  stroke-dasharray: 454;
+  stroke-dashoffset: 454;
+  animation: stroke-an 2s ease forwards 1.5s;
+}
+#dev path:nth-child(7) {
+  stroke-dasharray: 402;
+  stroke-dashoffset: 402;
+  animation: stroke-an 2s ease forwards 1.8s;
+}
+#dev path:nth-child(8) {
+  stroke-dasharray: 486;
+  stroke-dashoffset: 486;
+  animation: stroke-an 2s ease forwards 2.1s;
+}
+#dev path:nth-child(9) {
+  stroke-dasharray: 477;
+  stroke-dashoffset: 477;
+  animation: stroke-an 2s ease forwards 2.4s;
+}
+
+@keyframes stroke-an {
+  90%{
+    stroke-dashoffset: 15;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 #btn-an{
   background: linear-gradient(45deg, #b71540, #1f4197, #0d8e9a, #38ada9);
   animation: BG1color 5s ease-in-out infinite;

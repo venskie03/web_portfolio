@@ -1,3 +1,17 @@
+    
+    const dev = document.querySelectorAll("#dev path");
+    for(let i = 0; i < dev.length; i++){
+        console.log(`Letter ${i} is ${dev[i].getTotalLength()}`)
+    }
+
+    gsap.fromTo('.loading_page',{
+    opacity:1
+    },{
+        opacity:0,
+        delay:5,
+        duration:3,
+    })
+    
     function gotoupwork() {
             window.location.href = 'https://www.upwork.com/freelancers/~01528b2b871299a364';
         }
@@ -126,6 +140,8 @@ function sendEmail(event) {
     const pnumber = document.getElementById('pnumber');
     const cname = document.getElementById('cname');
     const msg = document.getElementById('msg');
+    const loading = document.getElementById('loading')
+    const btn = document.getElementById('btn-send')
 
     const sendbody = `
     <h1>Name: ${name.value}</h1> <br>
@@ -141,13 +157,22 @@ function sendEmail(event) {
 
     Email.send({
         SecureToken : "3e4e847b-763a-4489-be8b-859e651fd85c",
-        To: 'kevinkyleganados03@gmail.com',
+        To: 'kevinkyleganados033@gmail.com',
         From: "rudy72094@icqwj05.cse445.com",
         Subject: "This is the subject",
         Body: sendbody
     }).then(
         message => {
-            alert("Email Sent Successfully");
+            loading.classList.remove("hidden");
+            loading.classList.add("visible");
+            btn.classList.add("pl-2");
+            btn.textContent = "Sending..."
+           setTimeout(()=>{
+            loading.classList.remove("visible");
+            loading.classList.add("hidden");
+            btn.classList.remove("pl-2");
+            btn.textContent = "Message Sent!"
+           },3000)
             console.log(message);
             name.value = ""
             email.value = ""

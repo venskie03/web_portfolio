@@ -11,7 +11,22 @@
         </script>
     </head>
     <body class="bg-gray-900 text-color-white">
-        <header class="sticky top-0 z-50 p-5">
+        <div id="loading_page" class="loading_page h-full w-full bg-gray-900  z-50 fixed flex items-center justify-center p-4">
+            <svg id="dev" width="764" height="101" viewBox="0 0 764 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.04544 97V98H2.04544H36.4545C46.0398 98 54.376 96.1254 61.4279 92.3354L61.4309 92.3338C68.484 88.512 73.9126 83.0203 77.701 75.8788C81.5209 68.735 83.4091 60.2328 83.4091 50.4091C83.4091 40.6144 81.5204 32.1412 77.6991 25.0268C73.8807 17.8873 68.4377 12.4115 61.3849 8.62047C54.3616 4.79861 46.0241 2.90909 36.4091 2.90909H2.04544H1.04544V3.90909V97ZM56.1391 66.0775L56.1377 66.0805C54.3765 69.8916 51.7895 72.6064 48.3776 74.2841C44.943 75.9575 40.6938 76.8182 35.5909 76.8182H25.5454V24.0909H35.2727C40.4995 24.0909 44.8233 24.9676 48.286 26.6701L48.286 26.6702L48.295 26.6745C51.7353 28.3235 54.3504 31.0235 56.1403 34.8342L56.1416 34.8369C57.9326 38.6212 58.8636 43.7897 58.8636 50.4091C58.8636 57.0273 57.933 62.2293 56.1391 66.0775Z" stroke="#3BD6C6" stroke-width="2"/>
+                <path d="M94.5455 97V98H95.5455H160.455H161.455V97V78.7273V77.7273H160.455H119.045V60.5909H157.136H158.136V59.5909V41.2727V40.2727H157.136H119.045V23.1818H160.455H161.455V22.1818V3.90909V2.90909H160.455H95.5455H94.5455V3.90909V97Z" stroke="#3BD6C6" stroke-width="2"/>
+                <path d="M196.638 3.61706L196.422 2.90909H195.682H170.5H169.107L169.552 4.22878L200.962 97.3197L201.191 98H201.909H231.864H232.582L232.811 97.3197L264.22 4.22878L264.666 2.90909H263.273H238.091H237.351L237.134 3.61706L216.886 69.9319L196.638 3.61706Z" stroke="#3BD6C6" stroke-width="2"/>
+                <path d="M272.295 97V98H273.295H338.205H339.205V97V78.7273V77.7273H338.205H296.795V60.5909H334.886H335.886V59.5909V41.2727V40.2727H334.886H296.795V23.1818H338.205H339.205V22.1818V3.90909V2.90909H338.205H273.295H272.295V3.90909V97Z" stroke="#3BD6C6" stroke-width="2"/>
+                <path d="M351.295 97V98H352.295H413.523H414.523V97V78.7273V77.7273H413.523H375.795V3.90909V2.90909H374.795H352.295H351.295V3.90909V97Z" stroke="#3BD6C6" stroke-width="2"/>
+                <path d="M425.532 76.9358L425.535 76.9402C429.559 84.1842 435.008 89.7323 441.877 93.5556C448.736 97.3731 456.437 99.2727 464.955 99.2727C473.441 99.2727 481.125 97.3886 487.983 93.6027C494.885 89.8092 500.35 84.2596 504.375 76.9841C508.415 69.6811 510.409 60.8233 510.409 50.4545C510.409 40.0858 508.415 31.228 504.375 23.925C500.35 16.6492 494.885 11.0994 487.982 7.30589C481.125 3.52036 473.441 1.63636 464.955 1.63636C456.438 1.63636 448.739 3.52022 441.88 7.30635C435.008 11.1002 429.559 16.6501 425.534 23.925L425.532 23.9279C421.524 31.2302 419.545 40.0869 419.545 50.4545C419.545 60.7924 421.524 69.6338 425.532 76.9358ZM475.894 26.4193L475.898 26.4217C478.918 28.4444 481.257 31.4385 482.892 35.4669L482.894 35.4727C484.557 39.4999 485.409 44.483 485.409 50.4545C485.409 56.4261 484.557 61.4092 482.894 65.4364L482.892 65.4422C481.257 69.4706 478.918 72.4647 475.898 74.4873L475.894 74.4898C472.904 76.5117 469.274 77.5455 464.955 77.5455C460.667 77.5455 457.035 76.5125 454.011 74.4873C450.99 72.4641 448.636 69.4688 446.971 65.4395C445.337 61.4109 444.5 56.4265 444.5 50.4545C444.5 44.4825 445.337 39.4982 446.971 35.4696C448.636 31.4403 450.99 28.445 454.011 26.4217C457.035 24.3966 460.667 23.3636 464.955 23.3636C469.274 23.3636 472.904 24.3974 475.894 26.4193Z" stroke="#3BD6C6" stroke-width="2"/>
+                <path d="M521.545 97V98H522.545H545.045H546.045V97V69.0909H560.318C567.562 69.0909 573.876 67.7498 579.226 65.0276C584.57 62.3089 588.701 58.4665 591.59 53.5049C594.511 48.5117 595.954 42.7109 595.954 36.1364C595.954 29.596 594.543 23.8143 591.687 18.8238C588.833 13.8054 584.768 9.90081 579.517 7.11804C574.283 4.29827 568.099 2.90909 561 2.90909H522.545H521.545V3.90909V97ZM556.136 49.3636H546.045V23.0455H556.136C559.39 23.0455 562.061 23.603 564.189 24.6672C566.324 25.7345 567.912 27.2339 568.99 29.1685L568.993 29.1739C570.075 31.0874 570.636 33.3958 570.636 36.1364C570.636 38.8425 570.076 41.1709 568.989 43.1521C567.909 45.088 566.318 46.6038 564.18 47.7012L564.175 47.7037C562.083 48.7913 559.42 49.3636 556.136 49.3636Z" stroke="#3BD6C6" stroke-width="2"/>
+                <path d="M605.045 97V98H606.045H670.954H671.954V97V78.7273V77.7273H670.954H629.545V60.5909H667.636H668.636V59.5909V41.2727V40.2727H667.636H629.545V23.1818H670.954H671.954V22.1818V3.90909V2.90909H670.954H606.045H605.045V3.90909V97Z" stroke="#3BD6C6" stroke-width="2"/>
+                <path d="M684.045 97V98H685.045H707.545H708.545V97V66.1364H718.47L735.209 97.4712L735.491 98H736.091H760.636H762.32L761.514 96.5215L742.721 62.0308C747.55 59.6176 751.344 56.2399 754.074 51.8957L754.076 51.8931C757.012 47.1883 758.454 41.5108 758.454 34.9091C758.454 28.3986 757.043 22.7156 754.178 17.899C751.317 13.0577 747.244 9.35111 741.987 6.78479C736.761 4.18776 730.587 2.90909 723.5 2.90909H685.045H684.045V3.90909V97ZM718.636 46.4091H708.545V23.0455H718.636C721.91 23.0455 724.603 23.5182 726.748 24.4216L726.748 24.4217L726.759 24.4259C728.888 25.2945 730.455 26.5891 731.513 28.2991L731.517 28.3052C732.573 29.9835 733.136 32.1637 733.136 34.9091C733.136 37.6537 732.573 39.814 731.523 41.4582C730.471 43.0757 728.908 44.316 726.773 45.1594C724.651 45.9792 721.95 46.4091 718.636 46.4091Z" stroke="#3BD6C6" stroke-width="2"/>
+                </svg>
+                
+                
+        </div>
+        <header class="sticky top-0 z-10 p-5">
             <nav class="container flex justify-between items-center">
                 <div class=" text-white flex text-2xl">
                     <a class="text-[#3bd6c6] mt-1" href="#home">
@@ -86,7 +101,7 @@
                                 As a full stack developer, I excel in crafting user-friendly and visually captivating websites. My focus lies in comprehensively understanding my clients' requirements and delivering solutions that surpass their expectations. Let's collaborate to transform your concepts into reality!
                             </p>
                             <div className="icons text-5xl flex gap-2 justify-center md:justify-start">
-                                <a class="text-3xl" href="https://github.com/venskie03">
+                                <a class="text-3xl " href="https://github.com/venskie03">
                                     <ion-icon name="logo-github"></ion-icon>
                                 </a>
                                 <a class="text-3xl" href="https://www.linkedin.com/in/kevin-kyle-ganados-6b0b6a208/">
@@ -561,14 +576,24 @@
                         <input type="text" class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" id="cname" placeholder="Company">
                     </div>
                     <textarea rows="4" class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary" id="msg" placeholder="Message"></textarea>
-                    <button id="btn-an" class="hover:-translate-y-1 ease-in duration-300 mt-3 border p-2 w-32 rounded-sm" onclick="sendEmail(event)">Send Message</button>
+               
+                    <div class="flex justify-center">
+                        <div id="btn-an" class="flex flex-wrap max-w-44 justify-center hover:-translate-y-1 ease-in duration-300 mt-3 border  p-2 rounded-sm ">
+                            <div id="loading" class="loading hidden  w-6 h-6 rounded-full border-y-[#3bd6c6] border-x-2 border-t-2 animate-spin"></div>
+                            <button id="btn-send" class="" onclick="sendEmail(event)">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+             
                 </div>
             </form>
         </div>
     </section>
+   
 </main>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="script.js"></script>
