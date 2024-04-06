@@ -1,4 +1,3 @@
-    
     const dev = document.querySelectorAll("#dev path");
     for(let i = 0; i < dev.length; i++){
         console.log(`Letter ${i} is ${dev[i].getTotalLength()}`)
@@ -8,19 +7,23 @@
     opacity:1
     },{
         opacity:0,
-        delay:5,
+        delay:4.5,
         duration:3,
-    })
+        visibility: "hidden",
+    });
+
+
+
+    
     
     function gotoupwork() {
             window.location.href = 'https://www.upwork.com/freelancers/~01528b2b871299a364';
         }
 
         const navbar = document.querySelector('header');
-
-        const sectionn = document.querySelectorAll('section');
         const navlinkss = document.querySelectorAll('nav ul li a');
-
+        const sectionn = document.querySelectorAll('section');
+        
         window.onscroll = () => {
             if (window.scrollY > 100) {
                 navbar.classList.add('bg-color-primary-dark');
@@ -39,6 +42,7 @@
                 const sectionTop = section.offsetTop;
                 if (pageYOffset >= sectionTop - 60) {
                     current = section.getAttribute('id');
+                
                 }
             })
             navlinkss.forEach((item) => {
@@ -157,7 +161,7 @@ function sendEmail(event) {
 
     Email.send({
         SecureToken : "3e4e847b-763a-4489-be8b-859e651fd85c",
-        To: 'kevinkyleganados033@gmail.com',
+        To: 'kevinkyleganados03@gmail.com',
         From: "rudy72094@icqwj05.cse445.com",
         Subject: "This is the subject",
         Body: sendbody

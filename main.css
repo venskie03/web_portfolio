@@ -61,6 +61,19 @@ body {
   /* 2 */
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #000000;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg, #b71540, #1f4197, #0d8e9a, #38ada9);
+  border-radius: 5px;
+}
+
+
+
 
 #dev path:nth-child(1) {
   stroke-dasharray: 471;
@@ -118,6 +131,7 @@ body {
   }
 }
 
+
 #btn-an{
   background: linear-gradient(45deg, #b71540, #1f4197, #0d8e9a, #38ada9);
   animation: BG1color 5s ease-in-out infinite;
@@ -136,7 +150,7 @@ body {
   
 }
 
-#dp{
+#dp-container{
   -webkit-text-stroke: 10px white;
 }
 
